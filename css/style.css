@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #222;
+  color: whitesmoke; }
+
+.container {
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 50px; }
+
+h1 {
+  font-family: "Helvetica";
+  font-size: 24px;
+  font-weight: "600"; }
+
+form p {
+  color: indianred; }
+
+label {
+  display: block;
+  margin-bottom: 5px; }
+
+input:not([type=submit]):not([type=checkbox]), select, textarea {
+  color: inherit;
+  font: inherit;
+  padding: 5px;
+  border: 1px #ccc solid;
+  width: 100%;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 5px; }
+
+input[type=submit] {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: "600";
+  width: 100%;
+  padding: 8px;
+  background-color: indianred;
+  color: whitesmoke;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px; 
+}
+
+input[type=submit]:hover {
+  background-color: #32a3a3; 
+}
+
+/*# sourceMappingURL=style.css.map */

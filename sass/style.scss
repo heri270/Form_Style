@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);
+@import 'mixins.scss';
+@import 'vars.scss';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    @include fontStack($family: 'Open Sans', $size: 14px, $weight: 600);
+    background-color: $bodyBgColor;
+    color: $lightColor;
+}
+
+.container{
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 50px;
+    // border: 1px white solid;
+}
+
+h1{
+    @include fontStack($family: 'Helvetica', $size: 24px);
+}
+
+form p{
+    color: $inputTextColor;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input:not([type=submit]):not([type=checkbox]), select, textarea{
+    color: inherit;
+    font: inherit;
+    padding: 5px;
+    border: 1px #ccc solid;
+    width: 100%;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    @include fontStack($family: 'Open Sans', $size: 14px);
+    width: 100%;
+    padding: 8px;
+    background-color: $inputTextColor;
+    color: $lightColor;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover{
+        background-color: invert($inputTextColor);
+    }
+}
